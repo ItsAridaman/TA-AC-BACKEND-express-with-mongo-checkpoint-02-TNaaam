@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Edit Event Details</h1>
+    <a href="/EventDetails/<%= result._id %>">Back</a>
+    <form class="EventForm" action="/<%= result._id %>/edit" method="post">
+
+
+        <label for="">Title</label>
+        <input type="text" name="Title" value="<%= result.Title%>">
+        <label for="">Summary</label>
+        <input type="text" name="Summary" value="<%= result.Summary%>">
+
+        <label for="Event">Choose a category:</label>
+        <select id="Event" name="Category">
+            <option value="sports">sports</option>
+            <option value="singing">singing</option>
+            <option value="technology">technology</option>
+            <option value="programming">programming</option>
+            <option value="dancing">dancing</option>
+            <option value="arts">arts</option>
+
+        </select>
+
+        <label for="">Host</label>
+        <input type="text" name="Host" value="<%= result.Host%>">
+        <input type="date" name="startDate" value="<%= result.startDate%>">
+        <input type="date" name="endDate" value="<%= result.endDate%>">
+
+        <label for="">Location</label>
+        <input type="text" name="Location" value="<%= result.Location%>">
+
+
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

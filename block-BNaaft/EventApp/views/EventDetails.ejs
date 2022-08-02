@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="main-div-details">
+    <h1>Event Details</h1>
+    <a class="btmDecor btn" href="/home">Back</a>
+    <div>
+        <li>
+            Title: <%= result.Title %>
+        </li>
+        <li>
+            Host: <%= result.Host %>
+        </li>
+        <li>
+            Category: <%= result.Category %>
+        </li>
+        <li>
+            Event Start: <%= result.startDate %>
+        </li>
+        <li>
+            Event End: <%= result.endDate %>
+        </li>
+        <li>
+            Location: <%= result.Location %>
+        </li>
+        <li>
+            Description: <%= result.Summary %>
+        </li>
+        <a href="/<%= result._id %>/edit">Edit</a>
+        <a href="/<%= result._id %>/delete">Delete</a>
+    </div>
+
+    <form action="/<%= result._id %>/Review" method="post">
+        <label>Add a review</label>
+        <textarea name="content" placeholder="enter your comment here"></textarea>
+        <input type="submit">
+    </form>
+
+    <ul>
+        <% result.Reviews.forEach((result)=> { %>
+            <div class="comment-div">
+            <li>
+                <%= result.content %>
+            </li>
+            <a href="/<%= result._id %>/Review/edit">Edit</a>
+            <a href="/<%= result._id %>/Review/delete">Delete</a>
+            </div>
+            <% }); %>
+
+    </ul>
+
+
+    <a href="/<%= result._id %>/Likes">
+        <button>Like</button>
+    </a>
+
+    <h>
+        <%= result.Likes %>
+    </h>
+</div>
+</body>
+
+</html>
