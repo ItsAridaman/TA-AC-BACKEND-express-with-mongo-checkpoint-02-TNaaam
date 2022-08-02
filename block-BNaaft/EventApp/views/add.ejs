@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Add Event details</h1>
+    <a class="btmDecor" href="/home">Back</a>
+    <form class="form-details" action="/add" method="post">
+
+        <label for="">Title</label>
+        <input type="text" name="Title" placeholder="">
+        <label for="">Summary</label>
+        <input type="text" name="Summary" placeholder="">
+
+        <label for="Event">Choose a category:</label>
+        <select id="Event" name="Category">
+            <option value="sports">sports</option>
+            <option value="singing">singing</option>
+            <option value="technology">technology</option>
+            <option value="programming">programming</option>
+            <option value="dancing">dancing</option>
+            <option value="arts">arts</option>
+
+        </select>
+
+        <label for="">Host</label>
+        <input type="text" name="Host" placeholder="">
+        <label for="">StartDate</label>
+        <input type="date" name="startDate" placeholder="">
+        <label for="">EndDate</label>
+        <input type="date" name="endDate" placeholder="">
+
+        <label for="">Location</label>
+        <input type="text" name="Location" placeholder="">
+
+
+        <input class="form-submit" type="submit">
+    </form>
+</body>
+
+</html>
