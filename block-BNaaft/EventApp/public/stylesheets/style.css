@@ -1,0 +1,125 @@
+body {
+  padding: 30px 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(195, 246, 192);
+}
+
+a {
+  color: #00B7FF;
+}
+.event-details-box
+{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 19%;
+  padding: 16px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+.event-details
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 00;
+  
+}
+.main-div-details
+{
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  border-radius: 5px;
+  background-color: white;
+}
+.comment-div
+{
+  background-color: rgb(224, 236, 232);
+  padding: 7px;
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+button
+{
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.box-1{
+  background-color: rgb(18, 191, 171);
+  color: rgb(8, 0, 0);
+  padding: 2px 5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.Div-1 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 00;
+}
+
+.Div-1 a{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(10, 121, 155);
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.btmDecor
+{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(10, 121, 155);
+  padding:2px 6px;
+  border-radius: 5px;
+}
+.EventForm
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 400px;
+  
+}
+
+.btn
+{
+  width: fit-content;
+}
+
+.form-1
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+input,select{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 7px;
+ 
+}
+
+.form-details
+{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-submit
+{
+  margin-top: 15px;
+  background-color:  rgb(10, 121, 155);
+  color: white;
+}
+h1{
+  text-align: center;
+}
